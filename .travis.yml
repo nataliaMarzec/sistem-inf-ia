@@ -1,0 +1,17 @@
+  language:
+      - java
+  services:
+      - mysql
+  
+  before_install:
+      - mysql -u root < bbdd_Travis.sql
+
+  cache:
+      directories:
+          - $HOME/.m2
+  dist:
+      - trusty
+  sudo:
+      - false
+  notifications:
+      - email: false 
