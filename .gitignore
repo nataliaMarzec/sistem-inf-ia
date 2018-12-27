@@ -41,4 +41,5 @@ Thumbs.db
 .classpath
 .directory
 .project
-
+/classpath/
+/target/
